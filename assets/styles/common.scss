@@ -17,7 +17,7 @@
     align-items: center;
     height: 100%;
   }
-
+  
   & > img {
     width: 90%;
   }
@@ -27,17 +27,17 @@
   }
 
   &__item:hover {
-    border-bottom: #0063fb solid 2px;
+    border-bottom: primary-blue solid 2px;
   }
 
   &__item svg {
-    color: #9ba8ba;
+    color: bluegray400;
   }
 
   & a {
     display: flex;
     height: 100%;
-    color: #464646;
+    color: licorice;
   }
 
   &, ul, li {
@@ -67,24 +67,24 @@
     padding: 0.9rem 1rem;
     width: 100%;
     font-size: 1rem;
-    border: #c3ccd9 solid 1px;
+    border: sardine solid 1px;
   }
 
   &::placeholder {
-    color: #c3ccd9;
+    color: sardine;
   }
 
   &__input:hover {
-    border-color: #9ba8ba;
+    border-color: bluegray400;
   }
 
   &__input:focus {
-    outline: 2px solid #06befb;
+    outline: 2px solid secondary-blue;
     outline-offset: -2px;
   }
 
   &__button svg {
-    color: #c3ccd9;
+    color: sardine;
   }
 
   &__map:hover {
@@ -97,7 +97,7 @@
 
   &__map span {
     font-size: 1rem;
-    color: #464646;
+    color: licorice;
     font-family: finn-bold;
   }
 }
@@ -124,7 +124,7 @@
   }
 
   &__header a {
-    color: #0063fb;
+    color: primary-blue;
   }
 
   &__header a:hover,
@@ -133,7 +133,7 @@
   }
 
   &__card:hover {
-    background-color: #f1f9ff;
+    background-color: ice;
   }
 
   &__image {
@@ -147,7 +147,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    border: 2px solid #c3ccd9;
+    border: 2px solid sardine;
   }
 
   &__shadow {
@@ -167,7 +167,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    color: white;
+    color: milk;
     z-index: 1;
   }
 
@@ -203,15 +203,15 @@
   }
 
   &__item--blue {
-    color: #06befb;
+    color: secondary-blue;
   }
 
   &__item:hover {
-    color: #767676;
+    color: stone;
   }
 
   &__label {
-    color: #464646;
+    color: licorice;
     padding: 0.5rem;
   }
 }
@@ -228,7 +228,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: milk;
   font-family: "Finn";
   max-width: 100%;
 }
@@ -239,18 +239,18 @@ h1 {
 }
 
 a {
-color: #0063fb;
+color: primary-blue;
 }
 
 
 .login-background {
-  background-color: #f6f8fb;
+  background-color: marble;
 }
 /* general end */
 
 .left-container {
   display: block;
-  background-color: #f1f9ff;
+  background-color: ice;
   text-align: center;
   height: 350px;
   padding: 25px;
@@ -264,18 +264,18 @@ color: #0063fb;
   justify-content: center;
   margin-top: 200px;
   width: 100%;
-  color: #767676;
+  color: stone;
 }
 
  .login {
   
   &-card {
-    background-color: #ffffff;
+    background-color: milk;
     width: 400px;
     padding: 40px 40px;
     border-radius: 10px;
     justify-content: center;
-    box-shadow: 0 20px 20px 0 gray;
+    box-shadow: 0 20px 20px 0 stone;
   }
 
   &-card__header img {
@@ -287,7 +287,7 @@ color: #0063fb;
   }
 
   &-card h1 {
-    color: #464646;
+    color: licorice;
     font-family: finn;
     margin: 25px 0;
   }
@@ -306,7 +306,7 @@ color: #0063fb;
   }
 
   &-card__input {
-    background-color: #e5e5e5;
+    background-color: gray200;
     border: none;
     border-radius: 5px;
     display: block;
@@ -333,23 +333,23 @@ color: #0063fb;
 /* login and password */
 .login-card {
   &__button--mail {
-    background-color: #0063fb;
-    color: white;
+    background-color: primary-blue;
+    color: milk;
     border: none;
   }
   &__button--mail:hover {
-    background-color: #004abc;
-    box-shadow: 5px black;
+    background-color: blue700;
+    box-shadow: 5px gray900;
   }
 
   &__button--password {
-    background-color: #ffffff;
-    color: #0063fb;
+    background-color: milk;
+    color: primary-blue;
     border: none;
   }
   &__button--password:hover {
-    background-color: #f1f9ff;
-    border: solid 1px #e5e5e5;
+    background-color: ice;
+    border: solid 1px gray200;
   }
 }
 /* login and password end */

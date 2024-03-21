@@ -1,1 +1,24 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+@use "common.scss";
+
+@font-face {
+  font-family: "finn";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+@font-face {
+  font-family: "finn-bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$licorice: #464646;
+$stone: #767676;
+$sardine: #c3ccd9;
+$gray200: #e5e5e5;
+$gray900:#171717;
+$bluegray400: #9BA8BA;
+$ice:#f1f9ff;
+$milk:#FFFFFF;
+$marble: #f6f8fb;
+$blue: #004abc;
