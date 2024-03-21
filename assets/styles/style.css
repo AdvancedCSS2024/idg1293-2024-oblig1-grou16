@@ -27,7 +27,7 @@ a {
 color: #0063fb;
 }
 
-img {
+.login-card__header img {
   max-width: 20%;
 }
 
