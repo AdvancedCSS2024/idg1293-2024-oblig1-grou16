@@ -22,3 +22,315 @@ $ice:#f1f9ff;
 $milk:#FFFFFF;
 $marble: #f6f8fb;
 $blue: #004abc;
+
+.nav {
+  display: grid;
+  grid-template-columns: 10% auto auto auto;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  & > img {
+    width: 90%;
+  }
+  &__item {
+    padding: 0 0.5rem;
+    height: 100%;
+  }
+
+  &__item:hover {
+    border-bottom: primary-blue solid 2px;
+  }
+
+  &__item svg {
+    color: bluegray400;
+  }
+
+  & a {
+    display: flex;
+    height: 100%;
+    color: licorice;
+  }
+
+  &, ul, li {
+    list-style: none;
+  }
+
+  & svg {
+    margin-right: 2rem;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  align-items: center;
+
+
+  &__bar {
+    flex-grow: 1;
+  }
+
+  &__input {
+    margin: 1rem 0;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    border: sardine solid 1px;
+  }
+
+  &::placeholder {
+    color: sardine;
+  }
+
+  &__input:hover {
+    border-color: bluegray400;
+  }
+
+  &__input:focus {
+    outline: 2px solid secondary-blue;
+    outline-offset: -2px;
+  }
+
+  &__button svg {
+    color: sardine;
+  }
+
+  &__map:hover {
+    text-decoration: underline;
+  }
+
+  &__map svg {
+    margin-right: 10px;
+  }
+
+  &__map span {
+    font-size: 1rem;
+    color: licorice;
+    font-family: finn-bold;
+  }
+}
+
+.listing {
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__header h1,
+  &__header p {
+    display: inline-block;
+  }
+
+  &__header a {
+    color: primary-blue;
+  }
+
+  &__header a:hover,
+  &__header a:visited {
+    text-decoration: underline;
+  }
+
+  &__card:hover {
+    background-color: ice;
+  }
+
+  &__image {
+    position: relative;
+    width: 285px;
+    height: 310px;
+  }
+
+  &__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid sardine;
+  }
+
+  &__shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    border-radius: 0 0 8px 8px;
+  }
+
+  &__price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: milk;
+    z-index: 1;
+  }
+
+  &__info {
+    padding-bottom: 1rem;
+  }
+
+  &__place {
+    padding: 0.5rem 0;
+    color: grey;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+}
+
+.menu {
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  &__item--blue {
+    color: secondary-blue;
+  }
+
+  &__item:hover {
+    color: stone;
+  }
+
+  &__label {
+    color: licorice;
+    padding: 0.5rem;
+  }
+}
+
+.login {
+  
+  &-card {
+    background-color: milk;
+    width: 400px;
+    padding: 40px 40px;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 20px 20px 0 stone;
+  }
+
+  &-card__header img {
+    max-width: 20%;
+  }
+
+  &-card .required-label {
+    margin-bottom: 1em;
+  }
+
+  &-card h1 {
+    color: licorice;
+    font-family: finn;
+    margin: 25px 0;
+  }
+
+  & a, .login-card .required-label {
+    display: block;
+  }
+
+  &-card input {
+    padding: 15px 10px;
+  }
+
+  &-card__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-card__input {
+    background-color: gray200;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  &-card__checkbox {
+    margin: 15px;
+  }
+
+  &-card__button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 11px;
+  }
+
+}
+
+.login-card {
+  &__button--mail {
+    background-color: primary-blue;
+    color: milk;
+    border: none;
+  }
+  &__button--mail:hover {
+    background-color: blue700;
+    box-shadow: 5px gray900;
+  }
+
+  &__button--password {
+    background-color: milk;
+    color: primary-blue;
+    border: none;
+  }
+  &__button--password:hover {
+    background-color: ice;
+    border: solid 1px gray200;
+  }
+}
+
+.login {
+  &-footer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 1em;
+  }
+
+  &-footer ul {
+    position: relative;
+    left: 320px;
+  }
+
+  &-footer ul li {
+    display: inline;
+    margin-right: 5px;
+  }
+}
