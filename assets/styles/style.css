@@ -21,6 +21,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+  margin-top: 5%;
 }
 
 nav > img {
@@ -51,7 +52,7 @@ nav, ul, li {
 }
 
 .nav svg {
-  margin-right: 2rem;
+  margin-left: 1.5rem;
 }
 
 /* Searchbar */
