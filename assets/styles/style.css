@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "finn";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+@font-face {
+  font-family: "finn-bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+
+/* general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+a {
+color: #0063fb;
+}
+
+img {
+  max-width: 20%;
+}
+
+body {
+  font-family: "Finn";
+  max-width: 100%;
+}
+
+.login-background {
+  background-color: #f6f8fb;
+}
+/* general end */
+
+.left-container {
+  display: block;
+  background-color: #f1f9ff;
+  text-align: center;
+  height: 350px;
+  padding: 25px;
+  align-self: center;
+}
+
+/* Login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+  color: #767676;
+}
+
+.login-card {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 40px 40px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 20px 20px 0 gray;
+}
+.login-card .required-label {
+  margin-bottom: 1em;
+}
+
+.login-card h1 {
+  color: #464646;
+  font-family: finn;
+  margin: 25px 0;
+}
+
+.login-card a, .login-card .required-label {
+  display: block;
+}
+
+.login-card input {
+  padding: 15px 10px;
+}
+
+.login-card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-card__input {
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+}
+
+.login-card__checkbox {
+  margin: 15px;
+}
+
+.login-card__button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 11px;
+}
+/* Login end */
+
+
+/* login and password */
+.login-card__button--mail {
+  background-color: #0063fb;
+  color: white;
+  border: none;
+}
+.login-card__button--mail:hover {
+  background-color: #004abc;
+  box-shadow: 5px black;
+}
+
+.login-card__button--password {
+  background-color: #ffffff;
+  color: #0063fb;
+  border: none;
+}
+.login-card__button--password:hover {
+  background-color: #f1f9ff;
+  border: solid 1px #e5e5e5;
+}
+/* login and password end */
+
+/* footer */
+.login-footer {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 1em;
+}
+.login-footer ul {
+  position: relative;
+  left: 320px;
+}
+.login-footer ul li {
+  display: inline;
+  margin-right: 5px;
+}
